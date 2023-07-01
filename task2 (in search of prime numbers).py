@@ -4,7 +4,7 @@ def primesearcher(elem):
     collector = []
     output = []
     collector.append(elem)
-    for i in range(45):
+    for i in range(44):
         if elem % 2 == 0:
             elem += 21
         else:
