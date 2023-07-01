@@ -1,4 +1,5 @@
 import math
+import numpy as np
 elem = 0
 def primesearcher(elem):
     collector = []
@@ -17,6 +18,6 @@ def primesearcher(elem):
                 flag = 1
         if flag == 0:
             output.append(elemi)
-    return(output)
+    return(np.array(output))
 print(primesearcher(elem))
 
