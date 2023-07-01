@@ -1,6 +1,9 @@
 import math
 import numpy as np
+
 elem = 0
+
+
 def primesearcher(elem):
     collector = []
     output = []
@@ -13,11 +16,12 @@ def primesearcher(elem):
         collector.append(elem)
     for elemi in collector:
         flag = 0
-        for devider in range(2, int(math.sqrt(elem))+1):
+        for devider in range(2, int(math.sqrt(elem)) + 1):
             if elemi % devider == 0:
                 flag = 1
         if flag == 0:
             output.append(elemi)
-    return(np.array(output))
-print(primesearcher(elem))
+    return (np.array(output))
 
+
+print(primesearcher(elem))
