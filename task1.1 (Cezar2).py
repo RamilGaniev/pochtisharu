@@ -1,9 +1,12 @@
 import string
+
 a = string.ascii_lowercase
 A = string.ascii_uppercase
 
 str0 = input()
 k = input()
+
+
 def Cezar(str0, k):
     exstr = []
     str0 = list(str0)
@@ -17,4 +20,6 @@ def Cezar(str0, k):
         else:
             exstr.append(i)
     return ''.join(exstr)
+
+
 print(Cezar(str0, k))
